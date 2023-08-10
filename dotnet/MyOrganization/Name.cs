@@ -16,9 +16,9 @@ namespace MyOrganization
         {
             if (first == null)
                 throw new Exception("first name cannot be null");
-            if (last == null) 
+            if (last == null)
                 throw new Exception("last name cannot be null");
-            this.first = first; 
+            this.first = first;
             this.last = last;
         }
 

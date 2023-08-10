@@ -21,13 +21,13 @@ namespace MyOrganization
             directReports = new HashSet<Position>();
         }
 
-        public Position(String title, Employee employee) : this(title)
+        public Position(string title, Employee employee) : this(title)
         {
             if (employee != null)
                 SetEmployee(employee);
         }
 
-        public String GetTitle()
+        public string GetTitle()
         {
             return title;
         }
@@ -42,19 +42,19 @@ namespace MyOrganization
             return employee;
         }
 
-        public Boolean IsFilled()
+        public bool IsFilled()
         {
             return employee != null;
         }
 
-        public Boolean AddDirectReport(Position position)
+        public bool AddDirectReport(Position position)
         {
             if (position == null)
                 throw new Exception("position cannot be null");
             return directReports.Add(position);
         }
 
-        public Boolean RemovePosition(Position position)
+        public bool RemovePosition(Position position)
         {
             return directReports.Remove(position);
         }
